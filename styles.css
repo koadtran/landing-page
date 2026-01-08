@@ -65,21 +65,21 @@ a {
     gap: 10px;
 }
 
-.hero button {
+button {
+    box-sizing: content-box;
     font-size: 18px;
     color: #F9FAF8;
     background-color: #3882F6;
     align-self: flex-start;
-    border-radius: 8px;
+    border-radius: 4px;
+    border: none;
+    padding: 7px;
 }
 
 .hero .image {
     width: 300px;
     height: 200px;
     flex: none;
-    color:#1F2937;
-    font-size: 12px;
-    text-align: center;
     background-color: #E5E7EB;
     border: 2px solid #E5E7EB;
     border-radius: 16px;
@@ -87,7 +87,7 @@ a {
 
 /* Information */
 .info {
-    padding: 4%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,9 +111,6 @@ a {
 .image-and-text {
     flex: none;
     max-width: 200px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .image-group .image {
@@ -135,7 +132,60 @@ a {
 
 /* Quote */
 .quote {
+    padding: 5% 15%;
     background-color: #E5E7EB;
 }
 
+.quote .text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.quote .citation {
+    font-size: 18px;
+    color: #1F2937;
+    text-align: right;
+}
+
+/* Call to action */
+.cta {
+    padding: 5% 10%;
+    min-height: 100px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10%;
+    background-color: #3882F6;
+    border-radius: 8px;
+}
+
+.cta .text {
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+.cta button {
+    border: 1px solid #F9FAF8;
+    align-self: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #1F2937;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
 
